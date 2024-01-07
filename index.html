@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIAM-DTU | Official</title>
+  <link rel="icon"
+    href="https://scontent.fdel5-1.fna.fbcdn.net/v/t39.30808-6/307196734_226109019744000_6294939910792069723_n.png?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oyCqWMDetYIAX_eNohQ&_nc_ht=scontent.fdel5-1.fna&oh=00_AfDkIxGsFGyeeYE-NmoHdsEQ3Yw4f5Covda6G-XmcPYwAA&oe=64F078E0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-3 mb-3 me-2">
+    <div class="container-fluid">
+      <img style="width: 5%; border-radius: 50%"
+        src="./images/siam-dtu logo.jpg"
+        alt="..." />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none">
+        <i class="fa-solid fa-bars" style="color: white; border: none"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/activities.html" style="color: white">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/achievements.html" style="color: white">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/notices.html" style="color: white">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/dtu_siam/" style="color: white"><i
+                class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/company/dtu-siam/" style="color: white"><i
+                class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" style="float: right">
+          <input id="mail1" class="form-control me-2" type="text" placeholder="Subscribe NewsLetter"
+            onchange="setEmail()" aria-label="Email" />
+          <button type="button" onclick="sendMail()" class="btn btn-warning"
+            style="border: 2px solid black;">Submit</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="all">
+    <div class="container">
+      <img class="img-fluid" style="
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+          " src="https://pbs.twimg.com/media/EtXG2d3VIAEPTfb?format=jpg&name=medium" alt="..." />
+      <div class="who">
+        SIAM-DTU <br />
+        <p style="font-size: 2vw">
+          Where persistence meets aspiration. We are
+          <b><span class="auto-type" style="color: green;"> </span></b>
+        </p>
+      </div>
+      <div class="card bg-transparent" style="width: 25%; border: none">
+        <img style="border-radius: 50%"
+          src="./images/siam-dtu logo.jpg"
+          class="small card-img-top" alt="..." />
+      </div>
+    </div>
+    <hr style="
+          color: white;
+          font-weight: bolder;
+          margin-top: 3%;
+          margin-left: 10%;
+          margin-right: 10%;
+        " />
+
+    <div id="flex-container">
+      <div class="flex-item text-center">
+        total members <br />
+        <h2 class="count" data-count="400">400</h2>
+      </div>
+      <div class="flex-item text-center">
+        total scholars <br />
+        <h2 class="count" data-count="2000">2000</h2>
+      </div>
+      <div class="flex-item text-center">
+        total activities <br />
+        <h2 class="count" data-count="20">20</h2>
+      </div>
+    </div>
+
+    <div id="flex-container">
+      <div class="flex-item text-center">
+        instagram <i class="fa-brands fa-instagram"></i> <br />
+        <h2 class="count" data-count="2000">2000</h2>
+      </div>
+      <div class="flex-item text-center">
+        linkedin <i class="fa-brands fa-linkedin"></i> <br />
+        <h2 class="count" data-count="1000">1000</h2>
+      </div>
+    </div>
+    <hr style="
+          color: white;
+          font-weight: bolder;
+          margin-top: 3%;
+          margin-left: 10%;
+          margin-right: 10%;
+        " />
+
+    <div id="three" class="row" style="margin-left: 3%; width: 94%; margin-bottom: 2%">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card bg-transparent" style="border: none">
+          <div class="card-body">
+            <img
+              src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card bg-transparent text-center" style="border: none">
+          <div class="card-body">
+            <h1 style="color: white; margin-left: 5%">
+              <b>Inspiring Innovation <br />
+                Through Research</b>
+            </h1>
+          </div>
+          <p style="font-size: 2vw; color: rgb(244, 253, 251);">
+            Applied Mathematics, Computational and data science are essential to moving society forward and solving many
+            of world's most pressing questions and problems.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="
+        color: white;
+        font-weight: bolder;
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+      " />
+
+    <div id="two" class="row" style="margin-left: 3%; width: 94%; margin-bottom: 2%">
+      <div class="col-sm-6">
+        <div class="card bg-transparent text-center" style="border: none">
+          <div class="card-body">
+            <h1 style="color: white; margin-left: 5%">
+              <b>Computational and <br />
+                Numerical Analysis</b>
+            </h1>
+          </div>
+          <p style="font-size: 2vw; color: rgb(244, 253, 251);">
+            Demonstrating high values in technological and computational advancements and keeping pace with statistical
+            and mathematical upliftment of scientific approach.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card bg-transparent" style="border: none">
+          <div class="card-body">
+            <img
+              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="
+        color: white;
+        font-weight: bolder;
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+      " />
+
+    <div id="one" class="row" style="margin-left: 3%; width: 94%; margin-bottom: 2%">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card bg-transparent" style="border: none">
+          <div class="card-body">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card bg-transparent text-center" style="border: none">
+          <div class="card-body">
+            <h1 style="color: white; margin-left: 5%">
+              <b>Work Culture<br />
+                And Environment</b>
+            </h1>
+          </div>
+          <p style="font-size: 2vw; color: rgb(244, 253, 251);">
+            A healthy and self-paced work environment boasts our team and numerous sessions conducted help us improve
+            the senior-junior interactions and to facilitate the ideas as well as ideals.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr style="
+        color: white;
+        font-weight: bolder;
+        margin-top: 3%;
+        margin-left: 10%;
+        margin-right: 10%;
+      " />
+
+    <div class="footer card-group" style="color: white; width: 96%; margin-left: 3%; border: none;">
+      <div class="card bg-transparent" style="border: none;">
+        <div class="card-body text-center">
+          <h5 class="card-title" style="font-size: 2vw;"> <img
+              src="./images/siam-dtu logo.jpg"
+              alt="..." style="width: 7%; border-radius: 50%"> SIAM-DTU</h5>
+          <p class="card-text">Society Of Industrial And Applied Mathematics</p>
+          <p class="card-text" style="color: rgb(248, 241, 241);"><i class="fa-solid fa-phone"
+              style="margin-right: 1%;"></i>096252 10959</p>
+          <p class="card-text" style="color: white;"><i class="fa-solid fa-location-dot"
+              style="margin-right: 1%;"></i>Shahbad Daulatpur, Main Bawana Road, Delhi-110042</p>
+        </div>
+      </div>
+      <div class="card bg-transparent" style="border: none;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Quick Link</h5>
+          <p class="card-text"><a href="./pages/login.html" style="color: white;">
+              <p>Log In</p>
+            </a></p>
+          <p class="card-text"><a href="https://www.instagram.com/dtu_siam/" style="color: white;">
+              <p><i class="fa-brands fa-instagram" style="color: white; margin-left: 2%;"></i>Instagram</p>
+            </a></p>
+          <p class="card-text"><a target="_blank" href="https://www.linkedin.com/company/dtu-siam/"
+              style="color: white;"><i class="fa-brands fa-linkedin-in" style="margin-left: 2%;"></i>LinkedIn</a></p>
+        </div>
+        <div class="card-footer text-center" style="border: none;">
+          <small class="text-body-secondary">© SIAM-DTU 2023</small>
+          <p><small class="text-body-secondary">made by <a target="_blank"
+                href="https://www.linkedin.com/in/deepanshu-thakur-92a17a262" style="color: white;">Deepanshu
+                Thakur</a></small>
+          </p>
+        </div>
+      </div>
+      <div class="card bg-transparent" style="border: none;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Opening Hour</h5>
+          <p class="card-text">All days Online from 10:00 a.m. to 6:00 p.m.</p>
+          <p class="card-text" style="font-size: 1.5vw;">Subscribe to our NewsLetter</p>
+          <form class="d-flex" role="search" style="float: right">
+            <input id="mail2" class="form-control me-2" type="text" placeholder="Email" onchange="setEmail()"
+              aria-label="Email" />
+            <button type="button" onclick="sendMail()" class="btn btn-warning"
+              style="border: 2px solid black;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="apis.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".count").counterUp({
+          delay: 10,
+          time: 3000,
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a0dbc7135.js" crossorigin="anonymous"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Invincible.",
+          "phenomenal.",
+          "analysts.",
+          "finance specialists.",
+          "techies.",
+          "SIAM-DTU.",
+        ],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+    <script>
+      TweenMax.from(".navbar", 5, {
+        opacity: 0,
+        x: 40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".container", 3, {
+        opacity: 0,
+        y: -40,
+        ease: Expo.easeInOut,
+      });
+
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#one",
+          scrub: true,
+        },
+      });
+
+      tl.from("#one", {
+        x: 20,
+        opacity: 0,
+        duration: 2,
+      });
+
+      let t2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#two",
+          scrub: true,
+        },
+      });
+
+      t2.from("#two", {
+        x: -20,
+        opacity: 0,
+        duration: 2,
+      });
+
+      let t3 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#three",
+          scrub: true,
+        },
+      });
+
+      t3.from("#three", {
+        x: 20,
+        opacity: 0,
+        duration: 12,
+      });
+    </script>
+</body>
+
+</html>
